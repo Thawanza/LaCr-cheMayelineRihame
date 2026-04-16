@@ -95,7 +95,7 @@ height: 100%;
 /* --- MOBILE --- */
 @media (max-width: 480px) {
     .about {
-        padding: 20px;
+        padding: 10px;
     }
 
     .about-title h1 {

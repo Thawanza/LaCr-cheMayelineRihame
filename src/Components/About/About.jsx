@@ -17,15 +17,14 @@ function About() {
 
           <div className="about-para">
             <p>
-              Notre crèche est un lieu chaleureux et sécurisé où chaque enfant est accueilli
-              avec bienveillance et attention. Nous avons à cœur d’offrir un environnement
-              épanouissant qui favorise le développement, la curiosité et l’autonomie des tout-petits.
+              Notre crèche offre un environnement chaleureux et sécurisé où
+              chaque enfant s’épanouit
+              grâce à une attention bienveillante et adaptée à ses besoins.
             </p>
 
             <p>
-              Grâce à une équipe qualifiée et passionnée, nous accompagnons chaque enfant dans ses
-              premiers apprentissages à travers des activités ludiques, éducatives et créatives
-              adaptées à son âge.
+              Notre équipe accompagne les tout-petits à travers des activités ludiques et éducatives
+              favorisant leur développement et leur autonomie.
             </p>
           </div>
 
