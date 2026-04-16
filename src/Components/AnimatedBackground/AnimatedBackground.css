@@ -1,0 +1,42 @@
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* reste derrière tout */
+  pointer-events: none; /* ne bloque pas les clics */
+  background: transparent;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  /* animation: float infinite ease-in-out; */
+}
+
+/* Animation des boules */
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateY(-30px) translateX(20px) scale(1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0px) translateX(-10px) scale(0.9);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateY(-20px) translateX(-15px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,128 @@
+.equipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 100px;
+
+}
+
+/* --- Titre --- */
+.equipe-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+    background: #84a98c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.equipe-title p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+
+}
+
+/* --- GRID --- */
+.equipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    
+}
+
+/* --- CARD --- */
+.equipe-member {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 110%;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+.equipe-member h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #161716;
+}
+
+.equipe-member h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #84a98c;
+}
+
+.equipe-member p {
+    font-size: 18px;
+    color: #555;
+}
+
+.equipe-member:hover {
+    transform: translateY(-5px);
+    
+}
+
+.equipe-skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.equipe-skill {
+    background: #84a98c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ⭐ Centre la 3e carte quand elle est seule sur la ligne */
+/* .equipe-container > :last-child:nth-child(odd) { */
+    /* grid-column: 1 / -1;    prend toute la ligne */
+    /* justify-self: center;   centrée au milieu */
+    /* width: 40%;             optionnel : taille plus petite et centrée */
+    /* height: 100%; */
+    /* margin-top: 50px; */
+/* } */
+
+@media (max-width: 768px) {
+    .equipe-title h1 {
+        font-size: 38px;
+    }
+
+    .equipes {
+        padding: 60px 15px;
+    }
+
+    .equipe-member {
+        padding: 20px;
+    }
+    .equipe-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .equipe-title h1 {
+        font-size: 30px;
+    }
+
+    .equipe-member {
+        padding: 18px;
+    }
+
+    .equipe-skill {
+        font-size: 13px;
+    }
+}

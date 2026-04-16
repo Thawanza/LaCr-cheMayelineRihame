@@ -1,0 +1,136 @@
+/* --- Section générale --- */
+.testimonials {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Titre --- */
+.testimonial-title h1 {
+    font-size: 45px;
+    font-weight: 600;
+    background: #84a98c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* --- Container des cartes (centré) --- */
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* --- Carte --- */
+.testimonials-format {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    width: 70%;
+    max-width: 700px;
+
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid #84a98c;
+    transition: all 0.3s ease;
+}
+
+.testimonials-format img {
+    width: 70px;
+    height: 70px;
+}
+
+.testimonials-format p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #4c4949;
+}
+
+.testimonials-format h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2e2828;
+}
+
+.testimonials-format:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Pagination centrée --- */
+.pagination-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.pagination-container .ant-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+/* items normaux */
+.pagination-container .ant-pagination-item {
+    border-color: #84a98c;
+}
+
+/* numéro de page */
+.pagination-container .ant-pagination-item a {
+    color: #84a98c;
+    font-weight: 900;
+}
+
+/* page active */
+.pagination-container .ant-pagination-item-active {
+    border-color: #84a98c !important;
+    
+}
+
+.pagination-container .ant-pagination-item-active a {
+    
+    font-size: 12px;
+}
+
+/* flèches */
+.pagination-container .ant-pagination-prev .ant-pagination-item-link,
+.pagination-container .ant-pagination-next .ant-pagination-item-link {
+    border-color: #84a98c;
+    color: #84a98c;
+   
+}
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .testimonial-title h1 {
+        font-size: 35px;
+    }
+
+    .testimonials-format {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .testimonials-format p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-format {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .testimonial-title h1 {
+        font-size: 28px;
+    }
+
+    .testimonials-format img {
+        width: 60px;
+        height: 60px;
+    }
+}
