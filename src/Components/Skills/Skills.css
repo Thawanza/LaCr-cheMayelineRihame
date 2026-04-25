@@ -56,9 +56,12 @@
 }
 
 .skill-format:hover {
-  background-color: #b7e1c2;
+  background-color: #84a98c;
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.skill-format:active {
+  background: #f7f7f7;
 }
 
 
