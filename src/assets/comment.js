@@ -28,7 +28,8 @@ const comment_Data = [
         s_no: "04",
         s_name: "Azeddine D",
          s_icon: evaluation,
-        s_details:"Une crèche exceptionnelle ! Mon fils s'y épanouit chaque jour. L'équipe est attentionnée et professionnelle."
+        s_details:"Les enfants apprennent, jouent et s’épanouissent chaque jour dans un environnement sûr et bienveillant.",
+
 
     },
 
