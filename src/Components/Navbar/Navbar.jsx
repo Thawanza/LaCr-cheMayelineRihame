@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import './Navbar.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import menu_open from '../../assets/menu_open.svg'
+import menu_open from '../../assets/menu_open.png'
 import menu_close from '../../assets/menu_close.png'
 import MonCv from '../../assets/Mon Cv.pdf'
 
