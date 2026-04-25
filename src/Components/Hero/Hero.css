@@ -3,10 +3,12 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 120px 20px;
+  align-items: center;
+
+  padding: 0 20px;
 
   background-image: url("../../assets/image.jpg");
   background-size: cover;
@@ -24,7 +26,7 @@
   z-index: 1;
 }
 
-/* Contenu */
+/* Contenu centré */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -33,34 +35,36 @@
 
   width: 100%;
   max-width: 850px;
-  padding: 20px;
+
+  padding-top: 80px; /* espace navbar */
 }
 
-/* Titre RESPONSIVE */
+/* Titre */
 .hero h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-weight: 800;
 }
 
-/* Texte RESPONSIVE */
+/* Texte */
 .hero p {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  opacity: 0.9;
-  margin-bottom: 40px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.6;
+  margin-bottom: 35px;
+  opacity: 0.95;
 }
 
 /* Boutons */
 .hero-action {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .hero-btn {
-  padding: 15px 35px;
+  padding: 14px 32px;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 600;
@@ -69,14 +73,14 @@
   cursor: pointer;
 }
 
-/* Primary button */
+/* Primary */
 .hero-btn.primary {
   background: #84a98c;
   color: white;
   border: none;
 }
 
-/* Secondary button */
+/* Secondary */
 .hero-btn.secondary {
   background: transparent;
   color: white;
@@ -89,40 +93,10 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
-/* Animations */
-.fade-in { animation: fadeIn 1.4s ease forwards; }
-.slide-down { animation: slideDown 1.4s ease forwards 0.3s; }
-.slide-up { animation: slideUp 1.4s ease forwards 0.5s; }
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Zoom background (desktop only) */
-@keyframes bgZoom {
-  0% { background-size: 100%; }
-  100% { background-size: 110%; }
-}
-
-.hero {
-  animation: bgZoom 12s ease-in-out infinite alternate;
-}
-
-/* --- TABLET --- */
+/* TABLET */
 @media (max-width: 992px) {
-  .hero {
-    padding: 100px 20px;
+  .hero-content {
+    padding-top: 60px;
   }
 
   .hero h1 {
@@ -130,15 +104,14 @@
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
-/* --- MOBILE --- */
+/* MOBILE */
 @media (max-width: 768px) {
-  .hero {
-    padding: 90px 15px;
-    animation: none; /* stop zoom bug mobile */
+  .hero-content {
+    padding-top: 40px;
   }
 
   .hero-action {
@@ -148,7 +121,7 @@
 
   .hero-btn {
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
   }
 
   .hero h1 {
@@ -156,17 +129,17 @@
   }
 
   .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
-/* --- SMALL MOBILE --- */
+/* SMALL MOBILE */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.6rem;
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
