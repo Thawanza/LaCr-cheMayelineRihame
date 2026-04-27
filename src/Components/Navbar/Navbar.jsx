@@ -22,9 +22,6 @@ function Navbar() {
       {/* LOGO + ANIMATION */}
       <div className='logo'>
         <h6> Crèche Mayeline <br /> Rihame </h6>
-        <span className="star star1">✨</span>
-        <span className="star star2">✨</span>
-        <span className="star star3">✨</span>
       </div>
 
       {/* BURGER ICON */}

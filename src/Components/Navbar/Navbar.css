@@ -31,49 +31,6 @@
     animation: float 4s ease-in-out infinite;
 }
 
-/* --- ÉTOILES --- */
-.star {
-    position: absolute;
-    font-size: 14px;
-    opacity: 0;
-    animation: sparkle 2s infinite ease-in-out;
-}
-
-/* Position des étoiles */
-.star1 {
-    top: -10px;
-    left: -10px;
-    animation-delay: 0s;
-}
-
-.star2 {
-    top: -5px;
-    right: -15px;
-    animation-delay: 0.5s;
-}
-
-.star3 {
-    bottom: -10px;
-    left: 50%;
-    animation-delay: 1s;
-}
-
-/* Animation étoiles */
-@keyframes sparkle {
-    0% {
-        opacity: 0;
-        transform: scale(0.5) translateY(0px);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.2) translateY(-5px);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0.5) translateY(0px);
-    }
-}
-
 /* Animation douce du logo */
 @keyframes float {
     0% { transform: translateY(0px); }

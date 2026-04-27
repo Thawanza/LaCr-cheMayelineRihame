@@ -45,31 +45,32 @@ export default function Galerie() {
         </SwiperSlide>
 
         {/* Slide 2 */}
-        <SwiperSlide>
-          <h3>Bonheur en Images</h3>
-          <div className="slide-images">
-            <img src={clown} alt="" />
-            <img src={cour} alt="" />
-          </div>
-        </SwiperSlide>
+        {/* <SwiperSlide> */}
+          {/* <h3>Bonheur en Images</h3> */}
+          {/* <div className="slide-images"> */}
+            {/* <img src={clown} alt="" /> */}
+            {/* <img src={cour} alt="" /> */}
+          {/* </div> */}
+        {/* </SwiperSlide> */}
 
         {/* Slide 3 */}
         <SwiperSlide>
           <h3>Activités et cours</h3>
           <div className="slide-images">
-            <img src={salle} alt="" />
+           
+             <img src={creche2} alt="" />
             <img src={activité2} alt="" />
           </div>
         </SwiperSlide>
 
         {/* Slide 4 */}
-        <SwiperSlide>
-          <h3>Activités et cours</h3>
-          <div className="slide-images">
-            <img src={creche2} alt="" />
-            <img src={cour} alt="" />
-          </div>
-        </SwiperSlide>
+        {/* <SwiperSlide> */}
+          {/* <h3>Activités et cours</h3> */}
+          {/* <div className="slide-images"> */}
+            {/*  */}
+            {/* <img src={cour} alt="" /> */}
+          {/* </div> */}
+        {/* </SwiperSlide> */}
 
         {/* Slide 5 */}
         <SwiperSlide>
@@ -81,13 +82,13 @@ export default function Galerie() {
         </SwiperSlide>
 
         {/* Slide 6 */}
-        <SwiperSlide>
-          <h3>Anniversaires</h3>
-          <div className="slide-images">
-            <img src={anniv1} alt="" />
-            <img src={cour} alt="" />
-          </div>
-        </SwiperSlide>
+        {/* <SwiperSlide> */}
+          {/* <h3>Anniversaires</h3> */}
+          {/* <div className="slide-images"> */}
+            {/* <img src={anniv1} alt="" /> */}
+            {/* <img src={cour} alt="" /> */}
+          {/* </div> */}
+        {/* </SwiperSlide> */}
 
         {/* Slide 7 */}
         <SwiperSlide>
@@ -99,13 +100,13 @@ export default function Galerie() {
         </SwiperSlide>
 
         {/* Slide 8 */}
-        <SwiperSlide>
-          <h3>Célébrations</h3>
-          <div className="slide-images">
-            <img src={céléb} alt="" />
-            <img src={cour} alt="" />
-          </div>
-        </SwiperSlide>
+        {/* <SwiperSlide> */}
+          {/* <h3>Célébrations</h3> */}
+          {/* <div className="slide-images"> */}
+            {/* <img src={céléb} alt="" /> */}
+            {/* <img src={cour} alt="" /> */}
+          {/* </div> */}
+        {/* </SwiperSlide> */}
 
         {/* Slide 9 */}
         <SwiperSlide>
@@ -117,13 +118,13 @@ export default function Galerie() {
         </SwiperSlide>
 
         {/* Slide 10 */}
-        <SwiperSlide>
-          <h3>Excursion</h3>
-          <div className="slide-images">
-            <img src={stade} alt="" />
-            <img src={cour} alt="" />
-          </div>
-        </SwiperSlide>
+        {/* <SwiperSlide> */}
+          {/* <h3>Excursion</h3> */}
+          {/* <div className="slide-images"> */}
+            {/* <img src={stade} alt="" /> */}
+            {/* <img src={cour} alt="" /> */}
+          {/* </div> */}
+        {/* </SwiperSlide> */}
       </Swiper>
     </div>
   );
