@@ -23,66 +23,107 @@ import cour from "../../assets/cour.jpg";
 import anniv from "../../assets/anniv.jpg";
 import anniv1 from "../../assets/anniv1.jpg";
 import céléb from "../../assets/céléb.jpg";
+
 export default function Galerie() {
   return (
     <div className="galerie" id="galerie">
       <h2>Notre Galerie</h2>
 
       <Swiper
-        slidesPerView={1}   // ✅ chaque slide contient 1 bloc
+        slidesPerView={1}
         spaceBetween={20}
-        navigation={true}   // ✅ flèches
+        navigation={true}
         modules={[Navigation]}
       >
         {/* Slide 1 */}
         <SwiperSlide>
-            <h3 >Bonheur en Images</h3>
+          <h3>Bonheur en Images</h3>
           <div className="slide-images">
             <img src={cours} alt="" />
             <img src={cour} alt="" />
-            <img src={clown} alt="" />
           </div>
         </SwiperSlide>
 
         {/* Slide 2 */}
         <SwiperSlide>
-             <h3 >Activités et cours</h3>
+          <h3>Bonheur en Images</h3>
           <div className="slide-images">
-            <img src={salle} alt="" />
-            <img src={activité2} alt="" />
-            <img src={creche2} alt="" />
+            <img src={clown} alt="" />
+            <img src={cour} alt="" />
           </div>
         </SwiperSlide>
 
         {/* Slide 3 */}
         <SwiperSlide>
-            <h3 >Anniversaires</h3>
+          <h3>Activités et cours</h3>
           <div className="slide-images">
-            <img src={anniv} alt="" />
-            <img src={img} alt="" />
-            <img src={anniv1} alt="" />
+            <img src={salle} alt="" />
+            <img src={activité2} alt="" />
           </div>
         </SwiperSlide>
 
         {/* Slide 4 */}
         <SwiperSlide>
-            <h3 >Célébrations</h3>
+          <h3>Activités et cours</h3>
+          <div className="slide-images">
+            <img src={creche2} alt="" />
+            <img src={cour} alt="" />
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 5 */}
+        <SwiperSlide>
+          <h3>Anniversaires</h3>
+          <div className="slide-images">
+            <img src={anniv} alt="" />
+            <img src={img} alt="" />
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 6 */}
+        <SwiperSlide>
+          <h3>Anniversaires</h3>
+          <div className="slide-images">
+            <img src={anniv1} alt="" />
+            <img src={cour} alt="" />
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 7 */}
+        <SwiperSlide>
+          <h3>Célébrations</h3>
           <div className="slide-images">
             <img src={yennayer} alt="" />
-             <img src={nvmbr} alt="" />
-              <img src={céléb} alt="" />
+            <img src={nvmbr} alt="" />
           </div>
-          
         </SwiperSlide>
-         <SwiperSlide>
-             <h3 >Excursion</h3>
-   <div className="slide-images">
-    
-     <img src={excu} alt="" />
-     <img src={casc} alt="" />
-     <img src={stade} alt="" />
-   </div>
-    </SwiperSlide>
+
+        {/* Slide 8 */}
+        <SwiperSlide>
+          <h3>Célébrations</h3>
+          <div className="slide-images">
+            <img src={céléb} alt="" />
+            <img src={cour} alt="" />
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 9 */}
+        <SwiperSlide>
+          <h3>Excursion</h3>
+          <div className="slide-images">
+            <img src={excu} alt="" />
+            <img src={casc} alt="" />
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 10 */}
+        <SwiperSlide>
+          <h3>Excursion</h3>
+          <div className="slide-images">
+            <img src={stade} alt="" />
+            <img src={cour} alt="" />
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );

@@ -10,13 +10,6 @@
   margin-bottom: 30px;
 }
 
-/* ⭐ 3 images par slide */
-.slide-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
 .galerie h3 {
   font-size: 24px;
   font-weight: 400;
@@ -24,13 +17,22 @@
   margin-bottom: 20px;
 }
 
+/* 2 images par slide */
+.slide-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flèches */
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
-
 }
 
-/* images */
+/* Images */
 .slide-images img {
   width: 100%;
   height: 330px;
@@ -41,24 +43,53 @@
 
 .slide-images img:hover {
   transform: scale(1.05);
-
 }
 
-/* responsive */
+/* Tablette */
 @media (max-width: 768px) {
-  .slide-images {
-    grid-template-columns: repeat(2, 1fr);
+  .galerie {
+    padding: 40px 20px;
   }
-}
 
-@media (max-width: 480px) {
   .slide-images {
-    grid-template-columns: 1fr;
-
+    gap: 15px;
   }
 
   .slide-images img {
-    width: 100%;
-    height: 170px;
+    height: 220px;
+  }
+
+  .galerie h2 {
+    font-size: 28px;
+  }
+
+  .galerie h3 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .slide-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .slide-images img {
+    height: 200px;
+  }
+
+  .galerie h2 {
+    font-size: 24px;
+  }
+
+  .galerie h3 {
+    font-size: 18px;
+  }
+
+  /* cacher les flèches sur mobile */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
   }
 }
