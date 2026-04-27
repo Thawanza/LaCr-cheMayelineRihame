@@ -1,8 +1,8 @@
 import React from 'react'
-import './Skills.css'
+import './Service.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import Skills_Data from '../../assets/skiils'
-function Skills() {
+function Service() {
     return (
         <div id='compétences' className='skills'>
             <div className="skill-title">
@@ -24,4 +24,4 @@ function Skills() {
     )
 }
 
-export default Skills
+export default Service
