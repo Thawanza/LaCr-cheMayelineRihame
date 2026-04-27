@@ -30,6 +30,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
+  
 }
 
 /* Images */
@@ -76,7 +77,7 @@
   }
 
   .slide-images img {
-    height: 200px;
+    height: 230px;
   }
 
   .galerie h2 {
@@ -90,6 +91,6 @@
   /* cacher les flèches sur mobile */
   .swiper-button-next,
   .swiper-button-prev {
-    display: none !important;
+    
   }
 }
