@@ -127,8 +127,8 @@
     font-size: 18px;
   }
   .image-modal img{
-  width: 50vmin;
-  height: 50vmin;
+  width: 70vmin;
+  height: 70vmin;
   object-fit: cover;
   border-radius: 12px;
 }
