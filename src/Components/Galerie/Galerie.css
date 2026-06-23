@@ -70,7 +70,6 @@
 .image-modal img{
   width: 80vmin;
   height: 80vmin;
-  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -96,13 +95,6 @@
   .galerie h3 {
     font-size: 20px;
   }
-
-  .image-modal img{
-  width: 60vmin;
-  height: 60vmin;
-  object-fit: cover;
-  border-radius: 12px;
-}
 }
 
 /* Mobile */
@@ -126,15 +118,9 @@
   .galerie h3 {
     font-size: 18px;
   }
-  .image-modal img{
-  width: 80vmin;
-  height: 80vmin;
-  object-fit: cover;
-  border-radius: 12px;
 }
 
 
 
 
 
-}
