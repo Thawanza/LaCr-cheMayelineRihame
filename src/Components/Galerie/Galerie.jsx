@@ -74,9 +74,21 @@ export default function Galerie() {
           <h3>Activités et cours</h3>
           <div className="slide-images">
 
-            <img src={creche2} alt="" />
-            <img src={activité2} alt="" />
-            <img src={cour} alt="" />
+            <img src={creche2} alt=""
+              onClick={() => {
+                setCurrentImage(creche2)
+                setOpen(true)
+              }} />
+            <img src={activité2} alt=""
+              onClick={() => {
+                setCurrentImage(activité2)
+                setOpen(true)
+              }} />
+            <img src={cour} alt=""
+              onClick={() => {
+                setCurrentImage(cour)
+                setOpen(true)
+              }} />
           </div>
         </SwiperSlide>
 
@@ -85,10 +97,26 @@ export default function Galerie() {
         <SwiperSlide>
           <h3>Anniversaires</h3>
           <div className="slide-images">
-            <img src={anniv} alt="" />
-            <img src={img} alt="" />
-            <img src={anniv1} alt="" />
-            <img src={cour} alt="" />
+            <img src={anniv} alt="" 
+              onClick={() => {
+                setCurrentImage(anniv)
+                setOpen(true)
+              }} />
+            <img src={img} alt=""
+              onClick={() => {
+                setCurrentImage(img)
+                setOpen(true)
+              }} />
+            <img src={anniv1} alt=""
+              onClick={() => {
+                setCurrentImage(anniv1)
+                setOpen(true)
+              }} />
+            <img src={cour} alt=""
+              onClick={() => {
+                setCurrentImage(cour)
+                setOpen(true)
+              }} />
           </div>
         </SwiperSlide>
 
@@ -97,10 +125,27 @@ export default function Galerie() {
         <SwiperSlide>
           <h3>Célébrations</h3>
           <div className="slide-images">
-            <img src={yennayer} alt="" />
-            <img src={nvmbr} alt="" />
-            <img src={céléb} alt="" />
-            <img src={cour} alt="" />
+            <img src={yennayer}
+              alt=""
+              onClick={() => {
+                setCurrentImage(yennayer)
+                setOpen(true)
+              }} />
+            <img src={nvmbr} alt=""
+              onClick={() => {
+                setCurrentImage(nvmbr)
+                setOpen(true)
+              }} />
+            <img src={céléb} alt=""
+              onClick={() => {
+                setCurrentImage(céléb)
+                setOpen(true)
+              }} />
+            <img src={cour} alt=""
+              onClick={() => {
+                setCurrentImage(cour)
+                setOpen(true)
+              }} />
           </div>
         </SwiperSlide>
 
@@ -109,10 +154,32 @@ export default function Galerie() {
         <SwiperSlide>
           <h3>Excursion</h3>
           <div className="slide-images">
-            <img src={excu} alt="" />
-            <img src={stade} alt="" />
-            <img src={stade} alt="" />
-            <img src={cour} alt="" />
+            <img src={excu}
+              alt=""
+              onClick={() => {
+                setCurrentImage(excu)
+                setOpen(true)
+              }}
+            />
+            <img src={stade}
+              alt=""
+              onClick={() => {
+                setCurrentImage(stade)
+                setOpen(true)
+              }}
+            />
+            <img src={stade}
+              alt=""
+              onClick={() => {
+                setCurrentImage(stade)
+                setOpen(true)
+              }} />
+            <img src={cour}
+              alt=""
+              onClick={() => {
+                setCurrentImage(cour)
+                setOpen(true)
+              }} />
           </div>
         </SwiperSlide>
 
