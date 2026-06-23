@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Galerie.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import { Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 // images
 import clown from "../../assets/clown.jpg";
@@ -25,6 +25,8 @@ import anniv1 from "../../assets/anniv1.jpg";
 import céléb from "../../assets/céléb.jpg";
 
 export default function Galerie() {
+  const [open, setOpen] = useState(false)
+  const [currentImage, setCurrentImage] = useState("")
   return (
     <div className="galerie" id="galerie">
       <h2>Notre Galerie</h2>
@@ -32,45 +34,52 @@ export default function Galerie() {
       <Swiper
         slidesPerView={1}
         spaceBetween={20}
-        navigation={true}
-        modules={[Navigation]}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
       >
         {/* Slide 1 */}
         <SwiperSlide>
           <h3>Bonheur en Images</h3>
           <div className="slide-images">
-            <img src={cours} alt="" />
-            <img src={cour} alt="" />
+            <img src={cours}
+              alt=""
+              onClick={() => {
+                setCurrentImage(cours)
+                setOpen(true)
+              }} />
+            <img src={cour}
+              alt=""
+              onClick={() => {
+                setCurrentImage(cour)
+                setOpen(true)
+              }} />
+            <img src={clown}
+              alt=""
+              onClick={() => {
+                setCurrentImage(clown)
+                setOpen(true)
+              }} />
+            <img src={cour}
+              alt=""
+              onClick={() => {
+                setCurrentImage(cour)
+                setOpen(true)
+              }} />
           </div>
         </SwiperSlide>
 
-        {/* Slide 2 */}
-        {/* <SwiperSlide> */}
-          {/* <h3>Bonheur en Images</h3> */}
-          {/* <div className="slide-images"> */}
-            {/* <img src={clown} alt="" /> */}
-            {/* <img src={cour} alt="" /> */}
-          {/* </div> */}
-        {/* </SwiperSlide> */}
 
         {/* Slide 3 */}
         <SwiperSlide>
           <h3>Activités et cours</h3>
           <div className="slide-images">
-           
-             <img src={creche2} alt="" />
+
+            <img src={creche2} alt="" />
             <img src={activité2} alt="" />
+            <img src={cour} alt="" />
           </div>
         </SwiperSlide>
 
-        {/* Slide 4 */}
-        {/* <SwiperSlide> */}
-          {/* <h3>Activités et cours</h3> */}
-          {/* <div className="slide-images"> */}
-            {/*  */}
-            {/* <img src={cour} alt="" /> */}
-          {/* </div> */}
-        {/* </SwiperSlide> */}
 
         {/* Slide 5 */}
         <SwiperSlide>
@@ -78,17 +87,11 @@ export default function Galerie() {
           <div className="slide-images">
             <img src={anniv} alt="" />
             <img src={img} alt="" />
+            <img src={anniv1} alt="" />
+            <img src={cour} alt="" />
           </div>
         </SwiperSlide>
 
-        {/* Slide 6 */}
-        {/* <SwiperSlide> */}
-          {/* <h3>Anniversaires</h3> */}
-          {/* <div className="slide-images"> */}
-            {/* <img src={anniv1} alt="" /> */}
-            {/* <img src={cour} alt="" /> */}
-          {/* </div> */}
-        {/* </SwiperSlide> */}
 
         {/* Slide 7 */}
         <SwiperSlide>
@@ -96,36 +99,38 @@ export default function Galerie() {
           <div className="slide-images">
             <img src={yennayer} alt="" />
             <img src={nvmbr} alt="" />
+            <img src={céléb} alt="" />
+            <img src={cour} alt="" />
           </div>
         </SwiperSlide>
 
-        {/* Slide 8 */}
-        {/* <SwiperSlide> */}
-          {/* <h3>Célébrations</h3> */}
-          {/* <div className="slide-images"> */}
-            {/* <img src={céléb} alt="" /> */}
-            {/* <img src={cour} alt="" /> */}
-          {/* </div> */}
-        {/* </SwiperSlide> */}
 
         {/* Slide 9 */}
         <SwiperSlide>
           <h3>Excursion</h3>
           <div className="slide-images">
             <img src={excu} alt="" />
-            <img src={casc} alt="" />
+            <img src={stade} alt="" />
+            <img src={stade} alt="" />
+            <img src={cour} alt="" />
           </div>
         </SwiperSlide>
 
-        {/* Slide 10 */}
-        {/* <SwiperSlide> */}
-          {/* <h3>Excursion</h3> */}
-          {/* <div className="slide-images"> */}
-            {/* <img src={stade} alt="" /> */}
-            {/* <img src={cour} alt="" /> */}
-          {/* </div> */}
-        {/* </SwiperSlide> */}
       </Swiper>
+      {
+        open &&
+        (<div className="image-modal" onClick={() => setOpen(false)}>
+          <img src={currentImage} alt="" />
+        </div>
+        )
+      }
+
     </div>
   );
+
 }
+
+
+
+
+

@@ -20,17 +20,28 @@
 /* 2 images par slide */
 .slide-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(4, minmax(200px, 400px));
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
-/* Flèches */
-.swiper-button-next,
-.swiper-button-prev {
-  color: white !important;
-  
+/* Pagination */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #cfcfcf;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #84a98c !important;
+  transform: scale(1.2);
 }
 
 /* Images */
@@ -40,11 +51,29 @@
   object-fit: cover;
   border-radius: 12px;
   transition: 0.3s ease;
+  
 }
 
 .slide-images img:hover {
   transform: scale(1.05);
 }
+
+.image-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+.image-modal img{
+  width: 80vmin;
+  height: 80vmin;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 
 /* Tablette */
 @media (max-width: 768px) {
@@ -67,17 +96,27 @@
   .galerie h3 {
     font-size: 20px;
   }
+
+  .image-modal img{
+  width: 60vmin;
+  height: 60vmin;
+  object-fit: cover;
+  border-radius: 12px;
+}
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .slide-images {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
   }
 
   .slide-images img {
-    height: 230px;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   .galerie h2 {
@@ -87,10 +126,15 @@
   .galerie h3 {
     font-size: 18px;
   }
+  .image-modal img{
+  width: 50vmin;
+  height: 50vmin;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-  /* cacher les flèches sur mobile */
-  .swiper-button-next,
-  .swiper-button-prev {
-    
-  }
+
+
+
+
 }
