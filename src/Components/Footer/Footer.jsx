@@ -39,7 +39,7 @@ function Footer() {
           </div>
           <div className='footer-contact'>
             <img src={mail} alt="Courriel" />
-            <p>creche.mayeline@live.fr</p>
+            <p>smilingbaby826@gmail.com</p>
           </div>
 
 
@@ -48,7 +48,7 @@ function Footer() {
       <hr />
       <div className="footer-bottom">
         <p> © 2026 Crèche MayelineRihame. Tous droits réservés.</p>
-        <p>Développé par <a href="" target="_blank">Thawanza Boulanouar</a></p>
+        <p>Développé par <a href="https://www.linkedin.com/in/thawanza-boulanouar-47a14a334 " target="_blank">Thawanza Boulanouar</a></p>
       </div>
 
 

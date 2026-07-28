@@ -1,128 +1,201 @@
-/* --- NAVBAR PRINCIPALE --- */
+/* ===========================
+   NAVBAR
+=========================== */
+
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    padding: 20px 40px;
-    background: #fff;
+    height: 75px;
+    padding: 0 7%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* --- LOGO + ANIMATION HOVER --- */
-/* --- LOGO --- */
-.logo {
-    position: relative;
-}
+/* ===========================
+   LOGO
+=========================== */
 
 .logo h6 {
-    position: relative;
-    font-family: 'Pacifico', cursive;
-    font-size: 22px;
-    font-weight: 600;
-
+    font-family: "Pacifico", cursive;
+    font-size: 26px;
     background: linear-gradient(45deg, #84a98c, #52796f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    animation: float 4s ease-in-out infinite;
+    cursor: pointer;
+    transition: .3s;
 }
 
-/* Animation douce du logo */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-2px); }
-    100% { transform: translateY(0px); }
+.logo h6:hover {
+    transform: scale(1.03);
 }
-/* --- MENU DESKTOP --- */
+
+/* ===========================
+   MENU DESKTOP
+=========================== */
+
 .nav-menu {
     display: flex;
-    list-style: none;
-    gap: 30px;
     align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-menu li {
+    list-style: none;
 }
 
 .nav-menu li a {
+    position: relative;
     text-decoration: none;
-    font-size: 18px;
-    color: #222;
-    transition: color 0.3s ease;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: #84a98c;
+    transition: .3s;
 }
 
 .nav-menu li a:hover {
     color: #84a98c;
 }
 
-/* --- BOUTON RÉSERVER --- */
-.nav-downloadcv {
-    margin-top: 10px;
+.nav-menu li a:hover::after {
+    width: 100%;
 }
+
+/* ===========================
+   BOUTON
+=========================== */
 
 .btn-cv {
     background: #84a98c;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
+    font-weight: 600;
+    transition: .3s;
 }
 
 .btn-cv:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(132,169,140,0.4);
+    background: #6d9180;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(132, 169, 140, .35);
 }
 
-/* --- BURGER ICONS --- */
+/* ===========================
+   BURGER
+=========================== */
+
 .nav-mob-open,
 .nav-mob-close {
     display: none;
+    cursor: pointer;
 }
 
-/* --- MOBILE RESPONSIVE --- */
-@media (max-width: 768px) {
+/* ===========================
+   MOBILE
+=========================== */
 
-    .nav-mob-open {
-        display: block;
-        width: 35px;
-        cursor: pointer;
-    }
+@media (max-width:768px) {
 
-    .nav-menu {
-        position: fixed;
-        right: -350px;
-        top: 0;
-        width: 300px;
-        height: 100vh;
-        background: #fff;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-        padding: 80px 20px;
-        transition: right 0.4s ease-in-out;
-        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-    }
-
-    .nav-mob-close {
-        display: block;
-        width: 30px;
-        position: absolute;
-        top: 25px;
-        left: 20px;
-        cursor: pointer;
-    }
-
-    .nav-menu li a {
-        font-size: 22px;
+    .navbar {
+        padding: 0 20px;
+        height: 70px;
     }
 
     .logo h6 {
-        font-size: 28px;
+        font-size: 22px;
+    }
+
+    .nav-mob-open {
+        display: block;
+        width: 32px;
+    }
+
+    .nav-menu {
+
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 280px;
+        height: 100vh;
+
+        background: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 28px;
+
+        padding: 90px 30px;
+
+        transition: right .4s ease;
+
+        box-shadow: -10px 0 30px rgba(0,0,0,.15);
+
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+
+        z-index: 1001;
+    }
+
+    .nav-menu li {
+
+        width: 100%;
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid #ececec;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-menu li a {
+
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .nav-mob-close {
+
+        display: block;
+
+        position: absolute;
+
+        top: 25px;
+        right: 25px;
+
+        width: 28px;
+    }
+
+    .btn-cv {
+
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
     }
 }

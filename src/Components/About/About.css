@@ -82,11 +82,11 @@ height: 100%;
     }
 
     .about-title h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .about-para {
-        
+        font-size: 16px;
     }
     .about-right{
         margin-top: 30px;
@@ -104,11 +104,11 @@ height: 100%;
     }
 
     .about-title h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .about-para {
-        font-size: 14px;
+        font-size: 12px;
     }
     .about-right{
         margin-top: 20px;

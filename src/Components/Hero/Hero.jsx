@@ -19,9 +19,6 @@ function Hero() {
           <AnchorLink className='hero-btn primary' offset={50} href='#contact'>
             Contactez-moi
           </AnchorLink>
-          <button className='hero-btn secondary'>
-            Découvrir
-          </button>
         </div>
       </div>
     </section>
