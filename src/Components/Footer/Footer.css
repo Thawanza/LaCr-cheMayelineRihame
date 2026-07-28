@@ -1,25 +1,136 @@
-.footer-bottom{
+.footer {
+    background: #2f3e46;
+    color: #fff;
+    padding: 60px 8%;
+    margin-top: 80px;
+}
+
+.footer-top {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-    margin-top: 15px;
-   margin-left: 10px;
-   margin-right: 15px;
+    gap: 80px;
+    margin-bottom: 40px;
 }
 
-.footer-bottom-right{
+.footer-top-left,
+.footer-top-right {
+    flex: 1;
+}
+
+/* Partie gauche */
+
+.footer-top-left img {
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.footer-top-left h3,
+.footer-top-right h3 {
+    color: #84a98c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-top-left p {
+    color: #d8d8d8;
+    line-height: 1.8;
+    max-width: 380px;
+    margin-bottom: 25px;
+}
+
+/* Réseaux sociaux */
+
+.footer-top-left-contact {
     display: flex;
-    gap: 50px;
-    margin-bottom: 50px;
+    gap: 15px;
 }
 
-@media (max-width:768px) {
-    .footer{
-        margin: 50px 70px;
+.footer-top-left-contact a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.footer-top-left-contact a:hover {
+    background: #84a98c;
+    transform: translateY(-5px);
+}
+
+.footer-top-left-contact img {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}
+
+/* Partie droite */
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.05);
+    transition: .3s;
+}
+
+.footer-contact:hover {
+    background: rgba(132,169,140,.15);
+}
+
+.footer-contact img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contact p {
+    color: #ececec;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Ligne */
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,.15);
+    margin: 35px 0;
+}
+
+/* Copyright */
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bfbfbf;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .footer {
+        padding: 50px 25px;
     }
-    .footer-bottom{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 10px;
+
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-top-left p {
+        max-width: 100%;
     }
 }

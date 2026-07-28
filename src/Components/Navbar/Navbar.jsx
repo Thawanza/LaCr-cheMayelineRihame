@@ -43,7 +43,7 @@ function Navbar() {
         />
 
         <li><AnchorLink offset={50} href='#home'>Accueil</AnchorLink></li>
-        <li><AnchorLink offset={50} href='#hero'>À propos</AnchorLink></li>
+        <li><AnchorLink offset={50} href='#about'>À propos</AnchorLink></li>
         <li><AnchorLink offset={50} href='#compétences'>Services</AnchorLink></li>
         <li><AnchorLink offset={50} href='#testimonials'>Témoignages</AnchorLink></li>
         <li><AnchorLink offset={50} href='#galerie'>Galerie</AnchorLink></li>
