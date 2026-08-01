@@ -153,7 +153,7 @@ function Contact() {
           </div>
           <div className="info-ouverture">
             <h3>Ouverture</h3>
-            <p>du lundi au vendredi</p>
+            <p>du dimanche au jeudi</p>
             <p>de 7h:30 à 17h</p>
           </div>
         </div>
