@@ -42,12 +42,12 @@ function Navbar() {
           className="nav-mob-close"
         />
 
-        <li><AnchorLink offset={50} href='#home'>Accueil</AnchorLink></li>
-        <li><AnchorLink offset={50} href='#about'>À propos</AnchorLink></li>
-        <li><AnchorLink offset={50} href='#compétences'>Services</AnchorLink></li>
-        <li><AnchorLink offset={50} href='#testimonials'>Témoignages</AnchorLink></li>
-        <li><AnchorLink offset={50} href='#galerie'>Galerie</AnchorLink></li>
-        <li><AnchorLink offset={50} href='#contact'>Contact</AnchorLink></li>
+        <li><AnchorLink offset={50} href='#home' onClick={closeMenu}>Accueil</AnchorLink> </li>
+        <li><AnchorLink offset={50} href='#about' onClick={closeMenu}>À propos</AnchorLink></li>
+        <li><AnchorLink offset={50} href='#compétences' onClick={closeMenu}>Services</AnchorLink></li>
+        <li><AnchorLink offset={50} href='#testimonials' onClick={closeMenu}>Témoignages</AnchorLink></li>
+        <li><AnchorLink offset={50} href='#galerie' onClick={closeMenu}>Galerie</AnchorLink></li>
+        <li><AnchorLink offset={50} href='#contact' onClick={closeMenu}>Contact</AnchorLink></li>
 
         <div className="nav-downloadcv">
           <a href={MonCv} download='MonCv' className="btn-cv">
